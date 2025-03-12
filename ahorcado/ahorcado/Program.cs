@@ -35,16 +35,24 @@ public class GameHangman
     Dictionary dictionary = new Dictionary();
     Hangman tallyMark = new Hangman();
     string hiddenWord;
-    string dashes;
+    string dashes = "";
     int attempts = 0;
     // Constructor
     public GameHangman(int attempts)
     {
         this.hiddenWord = randomWord(dictionary.getDictionary());
         setAttempts(attempts, false);
+        Random rand = new Random();
         for (int index = 0; index < getHiddenWord().Length; ++index)
         {
-            dashes += "_";
+            if (rand.NextDouble() < 0.2)
+            {
+                dashes += getHiddenWord()[index];
+            }
+            else
+            {
+                dashes += "_";
+            }
         }
     }
     // Getters/Setters
