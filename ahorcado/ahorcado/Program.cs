@@ -6,14 +6,14 @@ public class main
 {
     static void Main(string[] args)
     {
-        GameHangman game = new GameHangman(6);
+        GameHangman game = new GameHangman(7);
         game.play();
     }
 }
 
 public class Dictionary
 {
-    private string[] dictionary = new string[] {"ingeniero", "software", "elefante", "computadora", "telefono", "television" , "internacional", "restaurantes", "inteligencia", "industrial", "adolescentes", "comerciante", "profesional", "saturno", "religion", "lampara", "camioneta", "explorador", "astronauta", "teclado", "republica", "corona", "mariposa", "labrador", "martillo", "cocina"};
+    private string[] dictionary = new string[] { "ingeniero", "software", "elefante", "computadora", "telefono", "television", "internacional", "restaurantes", "inteligencia", "industrial", "adolescentes", "comerciante", "profesional", "saturno", "religion", "lampara", "camioneta", "explorador", "astronauta", "teclado", "republica", "corona", "mariposa", "labrador", "martillo", "cocina" };
     private string word;
     // Getters/Setters
     public string getWord()
@@ -160,7 +160,7 @@ public class GameHangman
                         }
                     }
                 }
-            }            
+            }
             if (getDashes() == getHiddenWord())
             {
                 Console.WriteLine("¡Felicidades! Has adivinado la palabra");
@@ -194,31 +194,37 @@ public class GameHangman
         {
             switch (strike)
             {
+                case > 5:
+                    break;
                 case 5:
                     horca[2] = "  " + head + "   |";
+                    print();
                     break;
                 case 4:
                     horca[3] = " " + left_arm + "    |";
+                    print();
                     break;
                 case 3:
                     horca[3] = " " + left_arm + torso + "   |";
+                    print();
                     break;
                 case 2:
                     horca[3] = " " + left_arm + torso + right_arm + "  |";
+                    print();
                     break;
                 case 1:
                     horca[4] = " " + left_leg + "    |";
+                    print();
                     break;
                 case 0:
                     horca[4] = " " + left_leg + " " + right_leg + "  |";
+                    print();
                     break;
             }
-            print();
-
         }
         public void print()
         {
-            for (int index = 0; index<horca.Length; ++index)
+            for (int index = 0; index < horca.Length; ++index)
             {
                 Console.WriteLine(horca[index]);
             }
