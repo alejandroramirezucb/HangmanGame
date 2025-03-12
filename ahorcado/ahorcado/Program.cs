@@ -6,7 +6,10 @@ public class main
 {
     static void Main(string[] args)
     {
-        GameHangman game = new GameHangman(7);
+        Console.WriteLine("Ingresa el numero de intentos con el que quieres jugar: ");
+        int attempts = Convert.ToInt32(Console.ReadLine());
+        Console.Clear();
+        GameHangman game = new GameHangman(attempts);
         game.play();
     }
 }
