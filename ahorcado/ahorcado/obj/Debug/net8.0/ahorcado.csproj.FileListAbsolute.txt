@@ -1,0 +1,14 @@
+C:\Users\USUARIO\Documents\3_SEMESTRE\PROGRAMACION 2\ahorcado\ahorcado\bin\Debug\net8.0\ahorcado.exe
+C:\Users\USUARIO\Documents\3_SEMESTRE\PROGRAMACION 2\ahorcado\ahorcado\bin\Debug\net8.0\ahorcado.deps.json
+C:\Users\USUARIO\Documents\3_SEMESTRE\PROGRAMACION 2\ahorcado\ahorcado\bin\Debug\net8.0\ahorcado.runtimeconfig.json
+C:\Users\USUARIO\Documents\3_SEMESTRE\PROGRAMACION 2\ahorcado\ahorcado\bin\Debug\net8.0\ahorcado.dll
+C:\Users\USUARIO\Documents\3_SEMESTRE\PROGRAMACION 2\ahorcado\ahorcado\bin\Debug\net8.0\ahorcado.pdb
+C:\Users\USUARIO\Documents\3_SEMESTRE\PROGRAMACION 2\ahorcado\ahorcado\obj\Debug\net8.0\ahorcado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\Documents\3_SEMESTRE\PROGRAMACION 2\ahorcado\ahorcado\obj\Debug\net8.0\ahorcado.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Documents\3_SEMESTRE\PROGRAMACION 2\ahorcado\ahorcado\obj\Debug\net8.0\ahorcado.AssemblyInfo.cs
+C:\Users\USUARIO\Documents\3_SEMESTRE\PROGRAMACION 2\ahorcado\ahorcado\obj\Debug\net8.0\ahorcado.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Documents\3_SEMESTRE\PROGRAMACION 2\ahorcado\ahorcado\obj\Debug\net8.0\ahorcado.dll
+C:\Users\USUARIO\Documents\3_SEMESTRE\PROGRAMACION 2\ahorcado\ahorcado\obj\Debug\net8.0\refint\ahorcado.dll
+C:\Users\USUARIO\Documents\3_SEMESTRE\PROGRAMACION 2\ahorcado\ahorcado\obj\Debug\net8.0\ahorcado.pdb
+C:\Users\USUARIO\Documents\3_SEMESTRE\PROGRAMACION 2\ahorcado\ahorcado\obj\Debug\net8.0\ahorcado.genruntimeconfig.cache
+C:\Users\USUARIO\Documents\3_SEMESTRE\PROGRAMACION 2\ahorcado\ahorcado\obj\Debug\net8.0\ref\ahorcado.dll
