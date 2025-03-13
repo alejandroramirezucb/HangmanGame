@@ -136,6 +136,11 @@ public class GameHangman
     }
     public void game()
     {
+        bool check = false; ;
+        if (getAttempts() == 6)
+        {
+            check = true;
+        }
         while (getAttempts() > 0)
         {
             Console.WriteLine("------------------------EL AHORCADO------------------------");
@@ -152,7 +157,7 @@ public class GameHangman
                 if (input != getHiddenWord())
                 {
                     setAttempts(getAttempts() - 1);
-                    tallyMark.drawHangman(getAttempts());
+                    tallyMark.drawHangman(getAttempts(), check);
                     if (getAttempts() == 1)
                     {
                         Console.WriteLine("¡Palabra equivocada! Queda " + getAttempts() + " intento");
@@ -174,7 +179,7 @@ public class GameHangman
                 if (checkLetter(input[0]) == false)
                 {
                     setAttempts(getAttempts() - 1);
-                    tallyMark.drawHangman(getAttempts());
+                    tallyMark.drawHangman(getAttempts(), check);
                     if (getAttempts() == 1)
                     {
                         Console.WriteLine("¡Letra equivocada! Queda " + getAttempts() + " intento");
@@ -226,37 +231,40 @@ public class GameHangman
         private char left_leg = '/';
         private char right_leg = '\\';
         // Procedimientos
-        public void drawHangman(int strike)
+        public void drawHangman(int strike, bool check)
         {
-            switch (strike)
+            if (check == true)
             {
-                case > 5:
-                    break;
-                case 5:
-                    horca[2] = "  " + head + "   |";
-                    print();
-                    break;
-                case 4:
-                    horca[3] = " " + left_arm + "    |";
-                    print();
-                    break;
-                case 3:
-                    horca[3] = " " + left_arm + torso + "   |";
-                    print();
-                    break;
-                case 2:
-                    horca[3] = " " + left_arm + torso + right_arm + "  |";
-                    print();
-                    break;
-                case 1:
-                    horca[4] = " " + left_leg + "    |";
-                    print();
-                    break;
-                case 0:
-                    horca[4] = " " + left_leg + " " + right_leg + "  |";
-                    print();
-                    break;
-            }
+                switch (strike)
+                {
+                    case > 5:
+                        break;
+                    case 5:
+                        horca[2] = "  " + head + "   |";
+                        print();
+                        break;
+                    case 4:
+                        horca[3] = " " + left_arm + "    |";
+                        print();
+                        break;
+                    case 3:
+                        horca[3] = " " + left_arm + torso + "   |";
+                        print();
+                        break;
+                    case 2:
+                        horca[3] = " " + left_arm + torso + right_arm + "  |";
+                        print();
+                        break;
+                    case 1:
+                        horca[4] = " " + left_leg + "    |";
+                        print();
+                        break;
+                    case 0:
+                        horca[4] = " " + left_leg + " " + right_leg + "  |";
+                        print();
+                        break;
+                }
+            }     
         }
         public void print()
         {
