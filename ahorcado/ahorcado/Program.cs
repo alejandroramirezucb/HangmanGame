@@ -155,11 +155,11 @@ public class GameHangman
                     tallyMark.drawHangman(getAttempts());
                     if (getAttempts() == 1)
                     {
-                        Console.WriteLine("¡Letra equivocada! Queda " + getAttempts() + " intento");
+                        Console.WriteLine("¡Palabra equivocada! Queda " + getAttempts() + " intento");
                     }
                     else
                     {
-                        Console.WriteLine("¡Letra equivocada! Quedan " + getAttempts() + " intentos");
+                        Console.WriteLine("¡Palabra equivocada! Quedan " + getAttempts() + " intentos");
                     }
                     continue;
                 }
