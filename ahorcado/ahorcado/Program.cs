@@ -109,7 +109,32 @@ public class GameHangman
         }
         return false;
     }
+
     public void play()
+    {
+        game();
+        while (true)
+        {
+            Console.WriteLine("¿Quieres jugar de nuevo? Confirma con la letra (s)");
+            string input = Console.ReadLine().ToLower();
+            if (input == "s")
+            {
+                Console.Clear();
+                Console.WriteLine("Ingresa el numero de intentos con el que quieres jugar: ");
+                int attempts = Convert.ToInt32(Console.ReadLine());
+
+                Console.Clear();
+                GameHangman game = new GameHangman(attempts);
+                game.play();
+            }
+            else
+            {
+                Console.Clear();
+                return;
+            }
+        }
+    }
+    public void game()
     {
         while (getAttempts() > 0)
         {
